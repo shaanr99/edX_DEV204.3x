@@ -1,0 +1,15 @@
+*.csproj
+*.dll
+*.user
+*.cache
+*.sln
+
+*.json
+
+*.txt
+
+*.pdb
+
+*.props
+
+*.targets
