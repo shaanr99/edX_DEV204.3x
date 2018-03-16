@@ -70,7 +70,8 @@ namespace edX_DEV204
             //htc.CreateHashtableExample();
             //htc.StepThroughHashTable();
 
-            Module2_SelfAssessmentLab lab = new Module2_SelfAssessmentLab();
+            // ************ LAB ***************
+            //Module2_SelfAssessmentLab lab = new Module2_SelfAssessmentLab();
 
             //// create an array
             //int[] testArray1 = { 1, 3, 1, 1 };
@@ -92,10 +93,19 @@ namespace edX_DEV204
             //Console.WriteLine("Input: 3, 2, 9, 5: {0}", lab.Difference(new int[] { 3, 2, 9, 5 }));
             //Console.WriteLine("Input: 1,1,1,1: {0}", lab.Difference(new int[] { 1, 1, 1, 1 }));
 
-            Console.WriteLine("Input:  a(())b(): Output:  {0}", lab.Parentheses("a(())b()"));
-            Console.WriteLine("Input:  (()1(): Output:  {0}", lab.Parentheses("(()1()"));
-            Console.WriteLine("Input:  (): Output:  {0}", lab.Parentheses("()"));
-            Console.WriteLine("Input:  ()((()))()(): Output:  {0}", lab.Parentheses("()((()))()()"));
+            //Console.WriteLine("Input:  a(())b(): Output:  {0}", lab.Parentheses("a(())b()"));
+            //Console.WriteLine("Input:  (()1(): Output:  {0}", lab.Parentheses("(()1()"));
+            //Console.WriteLine("Input:  (): Output:  {0}", lab.Parentheses("()"));
+            //Console.WriteLine("Input:  ()((()))()(): Output:  {0}", lab.Parentheses("()((()))()()"));
+            // ************ END LAB ***************
+
+            CollectionsClass cc = new CollectionsClass();
+            Console.WriteLine("Playing with an ArrayList ...");
+            cc.PlayWithArrayLists();
+
+            Console.WriteLine("Playing with a HashTable ...");
+            cc.PlayWithHashTables();
+
 
         }
 
