@@ -1,5 +1,5 @@
 ﻿// /****************************** Module Header ******************************\
-// Module Name:  Student.cs
+// Module Name:  GenericsLab.cs
 // Project:      edX_DEV204.3x
 // Copyright (c) Shaan Foltz
 //
@@ -11,21 +11,28 @@
 // WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
 // \***************************************************************************/
 using System;
-using System.Collections;
-using System.Collections.Generic;
-
 namespace edX_DEV204
 {
-    public class SampleStudent
+    public class GenericsLab
     {
-        public string FirstName;
-        public string LastName;
-        public SortedSet<int> Grades = new SortedSet<int>();
-
-        public SampleStudent(string firstName, string lastName)
+        public GenericsLab()
         {
-            FirstName = firstName;
-            LastName = lastName;
         }
+    }
+
+    class Student
+    {
+        public Student(string first, string last, int age, string prog)
+        {
+            this.FirstName = first;
+            this.LastName = last;
+            this.Age = age;
+            this.Program = prog;
+        }
+
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public int Age { get; set; }
+        public string Program { get; set; }
     }
 }

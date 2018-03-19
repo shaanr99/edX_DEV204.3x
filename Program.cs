@@ -12,6 +12,7 @@ WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
 \***************************************************************************/
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace edX_DEV204
 {
@@ -115,9 +116,9 @@ namespace edX_DEV204
             //collLab.LabTwo();
 
             //// Module 3 Assessment Lab
-            //Student student1 = new Student("John", "Doe");
-            //Student student2 = new Student("Sally", "Seaward");
-            //Student student3 = new Student("Colin", "Carnivore");
+            //SampleStudent student1 = new SampleStudent("John", "Doe");
+            //SampleStudent student2 = new SampleStudent("Sally", "Seaward");
+            //SampleStudent student3 = new SampleStudent("Colin", "Carnivore");
 
             //ArrayList students = new ArrayList();
             //student1.Grades.Push(67);
@@ -142,7 +143,7 @@ namespace edX_DEV204
             //students.Add(student2);
             //students.Add(student3);
 
-            //foreach(Student s in students){
+            //foreach(SampleStudent s in students){
             //    Console.WriteLine();
             //    Console.Write("First Name:  {0}, Last Name: {1}, Grades:  ", s.FirstName, s.LastName);
             //    foreach(int grade in s.Grades){
@@ -150,6 +151,37 @@ namespace edX_DEV204
             //    }
             //}
 
+            //// GENERICS
+            //GenericsClass gen = new GenericsClass();
+            //gen.TypeSafetyExampleOne();
+            //gen.UsingTheListClass();
+            //gen.UsingTheDictionaryClass();
+
+            //// Generic List<T> Lab
+            //List<Student> students = new List<Student>();
+            //Student stud1 = new Student("Tom", "Thumb", 12, "Computer Science");
+            //Student stud2 = new Student("Fred", "Flintstone", 45, "Geology");
+            //Student stud3 = new Student("Mickey", "Mouse", 35, "Animation");
+
+            //students.Add(stud1);
+            //students.Add(stud2);
+            //students.Add(stud3);
+
+            //foreach (Student stud in students){
+            //    Console.WriteLine(stud.FirstName);
+            //}
+
+            //// check for existance
+            //bool exists = students.Contains(stud1);
+            //Console.WriteLine(exists.ToString());
+
+            //// remove a student
+            //Console.WriteLine(students.Count);
+            //students.Remove(stud3);
+            //Console.WriteLine(students.Count);
+
+            ModuleFourAssessment mfa = new ModuleFourAssessment();
+            mfa.Lab();
         }
 
         private static void PrintArray(ArrayType arrayType, Object thisArray){
