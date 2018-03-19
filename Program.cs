@@ -11,6 +11,7 @@ EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED
 WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
 \***************************************************************************/
 using System;
+using System.Collections;
 
 namespace edX_DEV204
 {
@@ -57,7 +58,7 @@ namespace edX_DEV204
             //PrintArray(ArrayType.Jagged, jaggedArray);
 
             // MORE DATA STRUCTURES
-            DataStructuresClass dsc = new DataStructuresClass();
+            //DataStructuresClass dsc = new DataStructuresClass();
 
             //// ENUMERATIONS
             //dsc.PlayWithEnumerations();
@@ -99,13 +100,55 @@ namespace edX_DEV204
             //Console.WriteLine("Input:  ()((()))()(): Output:  {0}", lab.Parentheses("()((()))()()"));
             // ************ END LAB ***************
 
-            CollectionsClass cc = new CollectionsClass();
-            Console.WriteLine("Playing with an ArrayList ...");
-            cc.PlayWithArrayLists();
+            //CollectionsClass cc = new CollectionsClass();
+            //Console.WriteLine("Playing with an ArrayList ...");
+            //cc.PlayWithArrayLists();
 
-            Console.WriteLine("Playing with a HashTable ...");
-            cc.PlayWithHashTables();
+            //Console.WriteLine("Playing with a HashTable ...");
+            //cc.PlayWithHashTables();
 
+            //Console.WriteLine("Playing with a Lambdas ...");
+            //cc.PlayWithLambdas();
+
+            //CollectionsTutorialClass collLab = new CollectionsTutorialClass();
+            //collLab.LabOne();
+            //collLab.LabTwo();
+
+            //// Module 3 Assessment Lab
+            //Student student1 = new Student("John", "Doe");
+            //Student student2 = new Student("Sally", "Seaward");
+            //Student student3 = new Student("Colin", "Carnivore");
+
+            //ArrayList students = new ArrayList();
+            //student1.Grades.Push(67);
+            //student1.Grades.Push(97);
+            //student1.Grades.Push(100);
+            //student1.Grades.Push(56);
+            //student1.Grades.Push(87);
+
+            //student2.Grades.Push(100);
+            //student2.Grades.Push(99);
+            //student2.Grades.Push(95);
+            //student2.Grades.Push(100);
+            //student2.Grades.Push(89);
+
+            //student3.Grades.Push(80);
+            //student3.Grades.Push(87);
+            //student3.Grades.Push(85);
+            //student3.Grades.Push(76);
+            //student3.Grades.Push(89);
+
+            //students.Add(student1);
+            //students.Add(student2);
+            //students.Add(student3);
+
+            //foreach(Student s in students){
+            //    Console.WriteLine();
+            //    Console.Write("First Name:  {0}, Last Name: {1}, Grades:  ", s.FirstName, s.LastName);
+            //    foreach(int grade in s.Grades){
+            //        Console.Write("{0}, ", grade);
+            //    }
+            //}
 
         }
 

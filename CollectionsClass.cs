@@ -12,6 +12,8 @@
 // \***************************************************************************/
 using System;
 using System.Collections;
+using System.Collections.Generic;
+
 using static edX_DEV204.DataStructuresClass;
 
 namespace edX_DEV204
@@ -90,6 +92,32 @@ namespace edX_DEV204
             }
         }
 
+        public void PlayWithLambdas(){
+            List<Employee> employees = new List<Employee>()
+            {
+                new Employee() { empID = 001, Name = "Tom", Department= "Sales"},
+                new Employee() { empID = 024, Name = "Joan", Department= "HR"},
+                new Employee() { empID = 023, Name = "Fred", Department= "Accounting" },
+                new Employee() { empID = 040, Name = "Mike", Department= "Sales" },
+            };
+
+
+            // Find the member of the list that has an employee id of 023
+            Employee match = employees.Find((Employee p) => { return p.empID == 023; });
+            Console.WriteLine("empID: {0}\nName: {1}\nDepartment: {2}", match.empID, match.Name, match.Department);
+        }
+
+        private struct Employee {
+            public int empID;
+            public string Name;
+            public string Department;
+
+            public Employee(int _empID, string _Name, string _Department){
+                empID = _empID;
+                Name = _Name;
+                Department = _Department;
+            }
+        }
 
     }
 }
